@@ -1,4 +1,4 @@
-package com.project.BankingApp;
+package com.project.BankingApp.entity;
 
 import java.util.ArrayList;
 import java.util.HashMap;

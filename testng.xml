@@ -1,4 +1,27 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="MySuite">
+    <test name="AuthTests">
+        <classes>
+            <class name="com.project.BankingApp.tests.auth.BasicAuthTest"></class>
+            <class name="com.project.BankingApp.tests.auth.BearerTokenTest"></class>
+            <class name="com.project.BankingApp.tests.auth.OAuthTest"></class>
+        </classes>
+    </test>
 
+    <test name="BankTests">
+
+        <parameter name="Value1" value="200"></parameter>
+        <parameter name="Value2" value="500"></parameter>
+        <parameter name="FinalBalance" value="1300"></parameter>
+
+        <classes>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountInitializationTests"></class>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountAdvancedControlTests"></class>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountDataDrivenTests"></class>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountExceptionTests"></class>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountParameterizedTests"></class>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountTestListener"></class>
+            <class name="com.project.BankingApp.tests.bankaccount.BankAccountTransactionTests"></class>
+        </classes>
+    </test>
 </suite>
