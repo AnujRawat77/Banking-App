@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="MySuite">
+<suite name="MySuite" parallel="classes" thread-count="5">
     <test name="AuthTests">
         <classes>
             <class name="com.project.BankingApp.tests.auth.BasicAuthTest"></class>

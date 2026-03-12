@@ -41,7 +41,7 @@ public class OAuthTest {
                 .statusCode(401);
     }
 
-    @Test
+    @Test(description = "Hi Hello")
     public void testOAuthEmptyToken(){
         given()
                 .auth().oauth2("")
