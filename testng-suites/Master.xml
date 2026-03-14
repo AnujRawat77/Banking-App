@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="MasterSuite">
+    <suite-files>
+        <suite-file path="BasicTests/annotations.xml"/>
+        <suite-file path="BasicTests/testng.xml"/>
+    </suite-files>
+</suite>
